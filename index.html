@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Elements</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,11 +13,56 @@
         <h1>The Elements</h1>
         <hr>
     </header>
+    <div id="home">
+        <img style="width: 300px;" src="https://onheaven.co.in/wp-content/uploads/2021/06/34-scaled.jpg" alt="Bohr's Model of the Atom">
+        <div class="container">
+            <div id="home-info">
+                <p id="elements-desc">
+                    Short description of The Elements as a concept
+                </p>
+                <div id="learn-more">
+                    <label for="element">Select an Element:</label>
+                    <select onchange="elementsUpdate(this.value)" name="element" id="select-element" placeholder="Element">
+                        <option value="-1" selected="true" disabled>-----</option>
+                        <option value="1">Hydrogen</option>
+                        <option value="6">Carbon</option>
+                        <option value="8">Oxygen</option>
+                        <option value="26">Iron</option>
+                        <option value="79">Gold</option>
+                        <option value="87">Francium</option>
+                        <option value="99">Einsteinium</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="element-info-area">
+        <div id="element-name">
+            <h2 id="element-title">Select an Element to Learn More</h2>
+        </div>
+        <div>
+            <img id="element-image" src="" alt="">
+        </div>
+        <div id="specific-element-info">
+            <p id="fun-fact"></p>
+            <div>
+                <p>Approximate Discovery Date:</p>
+                <p id="year-discovered"></p>
+            </div>
+            <div>
+                <p>Ionization States:</p>
+                <p id="ion-states"></p>
+            </div>
+        </div>
+    </div>
     <footer>
         <div>
             Designed and Developed by Sam Kuhn
         </div>
-        <img style="height: 30px;" src="https://toppng.com/uploads/preview/banner-royalty-free-stock-mail-png-icon-free-download-email-envelope-outline-shape-with-rounded-corners-11563127097ticgmdoqvx.png" alt="email">
+        <a href="mailto:samuel685@revature.net">
+            <img style="height: 30px;" src="https://toppng.com/uploads/preview/banner-royalty-free-stock-mail-png-icon-free-download-email-envelope-outline-shape-with-rounded-corners-11563127097ticgmdoqvx.png" alt="email">
+        </a>
     </footer>
 </body>
 </html>
