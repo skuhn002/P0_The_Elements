@@ -66,11 +66,11 @@ async function elementsUpdate(value) {
         document.getElementById("ion-states-label").innerHTML = await `<b>${jsonData.name} Ionization States:</b> &nbsp`;
         document.getElementById("ion-states").innerHTML = jsonData.oxidationStates
         
-        let ionInfoP = document.createElement("P");
-        ionInfoP.innerHTML = "The Ioniztion state of an element tells you what states of charge it normally accepts. An ionization state of -1 for example means the element has 1 more electron than it would need for the charge of it's protons to perfectly balance out the charge of it's electrons.";
+        // let ionInfoP = document.createElement("P");
+        // ionInfoP.innerHTML = "The Ioniztion state of an element tells you what states of charge it normally accepts. An ionization state of -1 for example means the element has 1 more electron than it would need for the charge of it's protons to perfectly balance out the charge of it's electrons.";
 
-        let ionInfoNode = document.getElementById("ion-extra-info");
+        // let ionInfoNode = document.getElementById("ion-extra-info");
 
-        ionInfoNode.append(ionInfoP);
+        // ionInfoNode.append(ionInfoP);
     }
 }
