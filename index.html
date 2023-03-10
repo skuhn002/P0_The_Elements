@@ -22,7 +22,7 @@
                 </p>
                 <div id="learn-more">
                     <label for="element">Select an Element:</label>
-                    <select onchange="optionFunc(this.value)" name="element" id="select-element" placeholder="Element">
+                    <select onchange="elementsUpdate(this.value)" name="element" id="select-element" placeholder="Element">
                         <option value="-1" selected="true" disabled>-----</option>
                         <option value="1">Hydrogen</option>
                         <option value="6">Carbon</option>
@@ -39,10 +39,10 @@
     <hr>
     <div id="element-info-area">
         <div id="element-name">
-            <h2>Select an Element to Learn More</h2>
+            <h2 id="element-title">Select an Element to Learn More</h2>
         </div>
-        <div id="element-image">
-
+        <div>
+            <img id="element-image" src="" alt="">
         </div>
         <div id="specific-element-info">
 
