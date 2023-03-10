@@ -53,17 +53,24 @@ async function elementsUpdate(value) {
         console.log(jsonData);
     
         //update element info section
-        document.getElementById("element-title").innerHTML = await jsonData.name;
+        document.getElementById("element-title").innerHTML = await jsonData.name + ` (#${value})`;
         let elementImage = document.getElementById("element-image");
         elementImage.src = elementSpecifics[value].src;
         elementImage.alt = elementSpecifics[value].alt;
         
-        document.getElementById("fun-fact").innerHTML = elementSpecifics[value].funFact;
+        document.getElementById("fun-fact").innerHTML = "<b>Fun Fact: &nbsp</b>" + elementSpecifics[value].funFact;
 
-        document.getElementById("year-discovered-label").innerHTML = "Approximate Discovery Date: &nbsp";        
+        document.getElementById("year-discovered-label").innerHTML = "<b>Approximate Discovery Date:</b> &nbsp";        
         document.getElementById("year-discovered").innerHTML = jsonData.yearDiscovered;
 
-        document.getElementById("ion-states-label").innerHTML = "The Ioniztion state of an element tells you what states of charge it normally accepts. An ionization state of -1 for example means the element has 1 more electron than it would need for the charge of it's protons to perfectly balance out the charge of it's electrons. Ionization states for this element are: ";
+        document.getElementById("ion-states-label").innerHTML = await `<b>${jsonData.name} Ionization States:</b> &nbsp`;
         document.getElementById("ion-states").innerHTML = jsonData.oxidationStates
+        
+        let ionInfoP = document.createElement("P");
+        ionInfoP.innerHTML = "The Ioniztion state of an element tells you what states of charge it normally accepts. An ionization state of -1 for example means the element has 1 more electron than it would need for the charge of it's protons to perfectly balance out the charge of it's electrons.";
+
+        let ionInfoNode = document.getElementById("ion-extra-info");
+
+        ionInfoNode.append(ionInfoP);
     }
 }

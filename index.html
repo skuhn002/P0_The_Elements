@@ -22,15 +22,16 @@
         <div class="flex-container" id="home-img-container">
             <img id="home-img" src="https://onheaven.co.in/wp-content/uploads/2021/06/34-scaled.jpg" alt="Bohr's Model of the Atom">
         </div>
-        <div class="container">
+        <div class="container vertical-flex-container">
             <div id="home-info">
+                <h2><b>So what are The Elements?</b></h2>
                 <p id="elements-desc">
-                    &nbsp&nbsp&nbsp An element is nothing more than a fundamental unit. So what are The Elements? The (chemical) elements are the fundamental units that make up the world around us. Their electrical properties are each unique, because each chemical element (unique atom) has a different number of protons. Each proton is like a little magnet. Change the number of little magnets, and you change the electrical nature of the element. This unique electrical nature gives rise to the incredible living world around us, from jewlery and sea shells, to the food on your table and the water in the ocean. It's special little magnets dancing together all the way down.
+                    &nbsp&nbsp&nbsp An element is nothing more than a fundamental unit. The (chemical) elements are the fundamental units that make up the world around us. Their electrical properties are each unique, because each chemical element (unique atom) has a different number of protons. Each proton is like a little magnet. Change the number of little magnets, and you change the electrical nature of the element. This unique electrical nature gives rise to the incredible living world around us, from jewlery and sea shells, to the food on your table and the water in the ocean. It's special little magnets dancing together all the way down.
                 </p>
-                <div id="learn-more">
+                <div id="learn-more" class="vertical-flex-container">
                     <label for="element">Select an Element:</label>
                     <select onchange="elementsUpdate(this.value)" name="element" id="select-element" placeholder="Element">
-                        <option value="-1" selected="true" disabled>-----</option>
+                        <option value="-1" selected="true" disabled></option>
                         <option value="1">Hydrogen</option>
                         <option value="6">Carbon</option>
                         <option value="8">Oxygen</option>
@@ -46,7 +47,7 @@
     <hr>
     <div id="element-info-area">
         <div class="flex-container" id="element-name">
-            <h2 id="element-title">Select an Element to Learn More</h2>
+            <h2 id="element-title">Choose an Element to Learn About</h2>
         </div>
         <div class="flex-container" id="element-image-container">
             <img id="element-image" src="" alt="">
@@ -57,9 +58,12 @@
                 <p id="year-discovered-label"></p>
                 <p id="year-discovered"></p>
             </div>
-            <div>
+            <div id="ion-info">
                 <p id="ion-states-label"></p>
                 <p id="ion-states"></p>
+            </div>
+            <div id="ion-extra-info">
+
             </div>
         </div>
     </div>

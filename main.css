@@ -2,6 +2,10 @@ html {
     background-color: #FE9A4C;
 }
 
+p {
+    font-size: 20px;
+}
+
 .flex-container {
     display: flex;
 }
@@ -17,6 +21,7 @@ html {
 
 #home-img {
     height: 50vh;
+    border: solid gray 3px;
 }
 
 #home-img-container {
@@ -36,11 +41,12 @@ html {
 }
 
 #ion-states-label {
+    text-align: center;
     max-width: 45vw;
 }
 
-#ion-states {
-    text-align: center;
+#ion-info {
+    display: flex;
 }
 
 #specific-element-info {
@@ -68,4 +74,21 @@ footer {
 
 hr {
     border: solid black .1px;
+}
+
+#home-info {
+    margin: 10px;
+}
+
+#specific-element-info {
+    margin: 10px;
+    padding: 35px;
+}
+
+div#learn-more label, div#learn-more select {
+    font-size: 25px;
+}
+
+#fun-fact{
+    text-align: center;
 }
