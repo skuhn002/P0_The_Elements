@@ -58,12 +58,12 @@ async function elementsUpdate(value) {
         elementImage.src = elementSpecifics[value].src;
         elementImage.alt = elementSpecifics[value].alt;
         
-        document.getElementById("fun-fact").innerHTML = elementSpecifics[value].funFact;
+        document.getElementById("fun-fact").innerHTML = "<b>Fun Fact: &nbsp</b>" + elementSpecifics[value].funFact;
 
-        document.getElementById("year-discovered-label").innerHTML = "Approximate Discovery Date: &nbsp";        
+        document.getElementById("year-discovered-label").innerHTML = "<b>Approximate Discovery Date:</b> &nbsp";        
         document.getElementById("year-discovered").innerHTML = jsonData.yearDiscovered;
 
-        document.getElementById("ion-states-label").innerHTML = await `${jsonData.name} Ionization States: `;
+        document.getElementById("ion-states-label").innerHTML = await `<b>${jsonData.name} Ionization States:</b> &nbsp`;
         document.getElementById("ion-states").innerHTML = jsonData.oxidationStates
         
         let ionInfoP = document.createElement("P");
