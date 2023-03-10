@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Elements</title>
+    <script src="index.js" defer></script>
 </head>
 <body>
     <header>
@@ -21,9 +22,10 @@
                 </p>
                 <div id="learn-more">
                     <label for="element">Select an Element:</label>
-                    <select name="element" id="" placeholder="Element">
+                    <select onchange="console.log(this.value);" name="element" id="select-element" placeholder="Element">
                         <option value="-1" selected="true" disabled>-----</option>
                         <option value="element">element</option>
+                        <option value="otherElement">other element</option>
                     </select>
                 </div>
             </div>
