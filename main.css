@@ -57,3 +57,15 @@ html {
 #mail-icon {
     height: 4vh;
 }
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: solid black 2px;
+    padding: 30px;
+}
+
+hr {
+    border: solid black .1px;
+}
