@@ -22,10 +22,15 @@
                 </p>
                 <div id="learn-more">
                     <label for="element">Select an Element:</label>
-                    <select onchange="console.log(this.value);" name="element" id="select-element" placeholder="Element">
+                    <select onchange="optionFunc(this.value)" name="element" id="select-element" placeholder="Element">
                         <option value="-1" selected="true" disabled>-----</option>
-                        <option value="element">element</option>
-                        <option value="otherElement">other element</option>
+                        <option value="1">Hydrogen</option>
+                        <option value="6">Carbon</option>
+                        <option value="8">Oxygen</option>
+                        <option value="26">Iron</option>
+                        <option value="79">Gold</option>
+                        <option value="87">Francium</option>
+                        <option value="99">Einsteinium</option>
                     </select>
                 </div>
             </div>
