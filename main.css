@@ -1,0 +1,59 @@
+html {
+    background-color: #FE9A4C;
+}
+
+.flex-container {
+    display: flex;
+}
+
+#header-title {
+    justify-content: center;
+    width: 100vw;
+}
+
+.logo {
+    height: 10vh;
+}
+
+#home-img {
+    height: 50vh;
+}
+
+#home-img-container {
+    justify-content: center;
+}
+
+#element-name{
+    justify-content: center;
+}
+
+#element-image {
+    max-height: 50vh;
+}
+
+#element-image-container {
+    justify-content: center;
+}
+
+#ion-states-label {
+    max-width: 45vw;
+}
+
+#ion-states {
+    text-align: center;
+}
+
+#specific-element-info {
+    justify-content: center;
+}
+
+.vertical-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mail-icon {
+    height: 4vh;
+}

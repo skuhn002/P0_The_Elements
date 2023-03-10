@@ -5,20 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Elements</title>
+    <link rel="stylesheet" href="main.css">
     <script src="index.js" defer></script>
 </head>
 <body>
     <header>
-        <img style="height: 30px; display: inline;" src="https://imgs.search.brave.com/vqPrcCn2KWsn_xfXPCspDN1OsfkFbLUZUbrfL_x1rY4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3Lmdl/dG15Z3JhZGVzLmNv/LnVrL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzAzLzQuMy4y/LjYtRG9kZWNhaGVk/cm9uLnBuZz9maXQ9/MTk4MyUyQzE4OTkm/c3NsPTE" alt="blue dodecahedron">
-        <h1>The Elements</h1>
+        <div class="flex-container">
+            <img class="logo" src="https://imgs.search.brave.com/vqPrcCn2KWsn_xfXPCspDN1OsfkFbLUZUbrfL_x1rY4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vd3d3Lmdl/dG15Z3JhZGVzLmNv/LnVrL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzAzLzQuMy4y/LjYtRG9kZWNhaGVk/cm9uLnBuZz9maXQ9/MTk4MyUyQzE4OTkm/c3NsPTE" alt="blue dodecahedron">
+            <div class="flex-container" id="header-title">
+                <h1>The Elements</h1>
+            </div>
+        </div>
         <hr>
     </header>
     <div id="home">
-        <img style="width: 300px;" src="https://onheaven.co.in/wp-content/uploads/2021/06/34-scaled.jpg" alt="Bohr's Model of the Atom">
+        <div class="flex-container" id="home-img-container">
+            <img id="home-img" src="https://onheaven.co.in/wp-content/uploads/2021/06/34-scaled.jpg" alt="Bohr's Model of the Atom">
+        </div>
         <div class="container">
             <div id="home-info">
                 <p id="elements-desc">
-                    Short description of The Elements as a concept
+                    &nbsp&nbsp&nbsp An element is nothing more than a fundamental unit. So what are The Elements? The (chemical) elements are the fundamental units that make up the world around us. Their electrical properties are each unique, because each chemical element (unique atom) has a different number of protons. Each proton is like a little magnet. Change the number of little magnets, and you change the electrical nature of the element. This unique electrical nature gives rise to the incredible living world around us, from jewlery and sea shells, to the food on your table and the water in the ocean. It's special little magnets dancing together all the way down.
                 </p>
                 <div id="learn-more">
                     <label for="element">Select an Element:</label>
@@ -38,20 +45,20 @@
     </div>
     <hr>
     <div id="element-info-area">
-        <div id="element-name">
+        <div class="flex-container" id="element-name">
             <h2 id="element-title">Select an Element to Learn More</h2>
         </div>
-        <div>
+        <div class="flex-container" id="element-image-container">
             <img id="element-image" src="" alt="">
         </div>
-        <div id="specific-element-info">
+        <div class="vertical-flex-container" id="specific-element-info">
             <p id="fun-fact"></p>
-            <div>
-                <p>Approximate Discovery Date:</p>
+            <div class="flex-container">
+                <p id="year-discovered-label"></p>
                 <p id="year-discovered"></p>
             </div>
             <div>
-                <p>Ionization States:</p>
+                <p id="ion-states-label"></p>
                 <p id="ion-states"></p>
             </div>
         </div>
@@ -61,7 +68,7 @@
             Designed and Developed by Sam Kuhn
         </div>
         <a href="mailto:samuel685@revature.net">
-            <img style="height: 30px;" src="https://toppng.com/uploads/preview/banner-royalty-free-stock-mail-png-icon-free-download-email-envelope-outline-shape-with-rounded-corners-11563127097ticgmdoqvx.png" alt="email">
+            <img id="mail-icon" src="https://img.icons8.com/ios/256/new-post.png" alt="email">
         </a>
     </footer>
 </body>

@@ -60,8 +60,10 @@ async function elementsUpdate(value) {
         
         document.getElementById("fun-fact").innerHTML = elementSpecifics[value].funFact;
 
+        document.getElementById("year-discovered-label").innerHTML = "Approximate Discovery Date: &nbsp";        
         document.getElementById("year-discovered").innerHTML = jsonData.yearDiscovered;
 
+        document.getElementById("ion-states-label").innerHTML = "The Ioniztion state of an element tells you what states of charge it normally accepts. An ionization state of -1 for example means the element has 1 more electron than it would need for the charge of it's protons to perfectly balance out the charge of it's electrons. Ionization states for this element are: ";
         document.getElementById("ion-states").innerHTML = jsonData.oxidationStates
     }
 }
